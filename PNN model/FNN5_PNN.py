@@ -136,7 +136,7 @@ def conf_int_counter(mcd_prediction, conf_level_index, y_label):
     return percentage
 
 # how many times forward passes (BNN samples number)
-num_samples = 1000
+num_samples = 100
 mcPred = MCD(xtest, model, num_samples)
 
 Expected_Confidence_Level = [0,0.1,0.2,0.3,0.4,0.5,0.6,0.683,0.7,0.8,0.9,0.955,0.9973]
@@ -164,7 +164,7 @@ plt.legend(['Ground Truth', 'BNN performance', 'Three Sigma'], loc='upper left')
 
 # define how many data points want to show (10)
 data_num = 10
-designed_conf_level=0.85
+designed_conf_level=0.8
 plt.figure()
 dp_ini = int(len(ytest)/data_num)+0
 dp_index = [i*dp_ini for i in range(1,data_num+1,1)] # i=1~10
