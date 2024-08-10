@@ -126,7 +126,7 @@ def conf_int_counter(mcd_prediction, conf_level_index, y_label):
     return percentage
 
 # how many times forward passes (BNN samples number)
-num_samples = 1000
+num_samples = 100
 mcPred = MCD(xtest, model, num_samples)
 
 Expected_Confidence_Level = [0,0.1,0.2,0.3,0.4,0.5,0.6,0.683,0.7,0.8,0.9,0.955,0.9973]
@@ -169,34 +169,3 @@ plt.legend(['Label', 'Predicted conf_interval'], loc='upper left')
 plt.xlabel('Individual samples')
 plt.ylabel("Sample's cleavage frequency")
 plt.title('BNN forcasets with ' + '%s'%designed_conf_level +' confidence level (based on CRISPR-Net/LSTM)')
-
-
-#%%
-data_num = 10
-designed_conf_level=0.75
-plt.figure()
-dp_ini = int(len(ytest)/data_num)+0
-dp_index = [i*dp_ini for i in range(1,data_num+1,1)] # i=1~10
-dp_index = [286,572,858,1144,1430,1715,2002,2288,2574,2862]
-dp_y_label = ytest[dp_index]
-dp_y_pred = mcPred[dp_index]
-dplow, dphigh = conf_interval(dp_y_pred,designed_conf_level)
-xaxis2 = [1,2,3,4,5,6,7,8,9,10]
-fig = plt.figure()
-ax1 = fig.add_subplot(111)
-ax1.set_xticks(xaxis2)
-ax1.plot(xaxis2,dp_y_label, color='green', marker='o', linestyle='--')
-ax1.fill_between(xaxis2,dplow,dphigh,color='green',alpha=0.2)
-plt.legend(['True Label', 'Predicted Confidence interval'], loc='upper left')
-plt.xlabel('Sample Number')
-plt.ylabel("Cleavage Frequency")
-
-
-
-
-
-
-
-
-
-
