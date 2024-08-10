@@ -125,7 +125,7 @@ def conf_int_counter(mcd_prediction, conf_level_index, y_label):
     return percentage
 
 # how many times forward passes (BNN samples number)
-num_samples = 1000
+num_samples = 100
 mcPred = MCD(xtest, model, num_samples)
 
 Expected_Confidence_Level = [0,0.1,0.2,0.3,0.4,0.5,0.6,0.683,0.7,0.8,0.9,0.955,0.9973]
@@ -169,16 +169,3 @@ plt.legend(['Label', 'Predicted conf_interval'], loc='upper left')
 plt.xlabel('Individual samples')
 plt.ylabel("Sample's cleavage frequency")
 plt.title('BNN forcasets with ' + '%s'%designed_conf_level +' confidence level (based on CNN 5 layers)')
-
-
-
-
-
-
-
-
-
-
-
-
-
