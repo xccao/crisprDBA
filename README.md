@@ -23,4 +23,12 @@ scikit-learn > 1.1.3
 
 TensorFlow > 2.3.0
 
+USAGE
+------------
+An example of crisprDBA can be run as: 
+
+```
+python FNN5_PNN.py crisprSQL_723_format.npz
+```
+
 
