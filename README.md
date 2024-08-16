@@ -33,7 +33,10 @@ python FNN5_PNN.py crisprSQL_723_format.npz
 
 DATA PREPARATION
 ------------
-To predict off-target cleavage data, the raw data must be transformed to conform to the 7-bit encoding scheme described in Figure 1A of the publication. We provide the transformed datasets in the file data/crisprSQL or data/Cpf1fftarget in either 7×23 or 23×7 format. Two raw datasets can be downloaded from the data_description.txt file. The most recent version of the crisprSQL dataset is provided in the 100720.csv file.
+To predict off-target cleavage data, the raw data must be transformed to conform to the 7-bit encoding scheme described in Figure 1A of the publication. 
+We provide the transformed datasets in the file data/crisprSQL or data/Cpf1fftarget in either 7×23 or 23×7 format. 
+Two raw datasets can be downloaded from the data_description.txt file. 
+The most recent version of the crisprSQL dataset is provided in the 100720.csv file.
 
 CONTAINS
 ------------
