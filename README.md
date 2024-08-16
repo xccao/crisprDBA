@@ -16,8 +16,8 @@ numpy 1.18.5
 
 pandas 1.3.2
 
-scikit-learn
+scikit-learn > 1.1.3
 
-TensorFlow
+TensorFlow >2.3.0
 
 
