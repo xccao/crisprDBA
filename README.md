@@ -38,4 +38,5 @@ To predict off-target cleavage data, the raw data must be transformed to conform
 CONTAINS
 ------------
 PNN_model/basemodelname_PNN.py : Python script for running CRISPR-DBA to predict off-target activities involving indels and mismatches. 
+
 data/datasetname_format.npz : A transformed dataset that can be directly accessed by the script. 
