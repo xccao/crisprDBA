@@ -1,6 +1,8 @@
 # crisprDBA
 
-CRISPR-DBA is a Bayesian-based neural network framework designed to address the challenge of off-target effects that may arise from the low specificity of certain guide RNAs (gRNAs). Instead of introducing new parameters to simulate model uncertainty, this method represents the first neural network-based machine learning model that utilizes dropout layer information to extract the distribution of off-target cleavage activities for CRISPR/Cas gRNAs. Furthermore, it outperforms existing probabilistic models in terms of confidence performance. 
+CRISPR-DBA is a Bayesian-based neural network framework designed to address the challenge of off-target effects that may arise from the low specificity of certain guide RNAs (gRNAs). 
+Instead of introducing new parameters to simulate model uncertainty, this method represents the first neural network-based machine learning model that utilizes dropout layer information to extract the distribution of off-target cleavage activities for CRISPR/Cas gRNAs. 
+
 The CRISPR-DBA method offers three key advantages: 
 1) it generates reliable predictions by providing additional confidence estimates;
 2) it reduces complexity compared to other approaches with similar functionality;
