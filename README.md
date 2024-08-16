@@ -18,6 +18,6 @@ pandas 1.3.2
 
 scikit-learn > 1.1.3
 
-TensorFlow >2.3.0
+TensorFlow > 2.3.0
 
 
